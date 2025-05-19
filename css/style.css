@@ -25,6 +25,14 @@ body, html {
 	scroll-behavior: smooth;
 }
 
+body {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 /* --------------------------------- COLOR & OTHER --------------------------------- */
 
 :root {
@@ -42,7 +50,7 @@ a {
 	color: var(--primary-text-color);
 }
 
-a:hover {
+a:hover, #selected {
 	font-weight: bold;
 	text-decoration: underline;
 	color: var(--primary-hover-color);
@@ -58,9 +66,101 @@ button:hover {
 	background-color: var(--secondary-button-color);
 }
 
+.none {
+	display: none;
+}
+
+
+/* ---- TEMP */
+body {
+	background-color: green;
+}
+
 /* --------------------------------- HEADER --------------------------------- */
 
+#top-content {
+	width: 100%;
+	display: flex;
+	min-height: 118px;
+	align-items: center;
+	padding: 18px 116px;
+	transition: height 0.5s;
+	justify-content: space-between;
+	background-color: var(--primary-background-color);
+}
 
+#top-content .logo {
+	height: 79px;
+}
+
+#top-content .logo img {
+	cursor: pointer;
+}
+
+#top-content .navigation .list {
+	gap: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 480px;
+}
+
+#top-content .navigation .list a {
+	transition: all 0.25s;
+	font-family: "Roboto Mono";
+}
+
+#top-content .navigation .list figure {
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	transition: all 0.25s;
+}
+
+#top-content .navigation .list figure:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
 
 /* --------------------------------- FOOTER --------------------------------- */
 
+#bottom-content {
+	width: 100%;
+	display: flex;
+	min-height: 360px;
+	align-items: center;
+	padding: 80px 100px;
+	justify-content: space-evenly;
+	background-color: var(--primary-background-color);
+}
+
+#bottom-content section {
+	gap: 25px;
+	width: 200px;
+	height: 200px;
+	display: inherit;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#bottom-content section img {
+	width: 20px;
+	height: auto;
+}
+
+#bottom-content section figure {
+	gap: 25px;
+	display: inherit;
+	align-items: center;
+	margin-right: auto;
+}
+
+#bottom-content .genveje {
+	height: 200px;
+	width: 330px;
+	flex-wrap: wrap;
+}
+
+/* #bottom-content .genveje figure:nth-of-type(4) {
+	margin-top: 48px;
+} */
