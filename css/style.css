@@ -122,6 +122,43 @@ body {
 	text-decoration: underline;
 }
 
+/* --------------------- RESIZE */
+
+@media screen and (max-width: 950px) {
+
+	#top-content {
+		gap: 25px;
+		flex-direction: column;
+	}
+
+	#top-content .logo {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#top-content .logo img:first-of-type {
+		width: fit-content;
+	}
+
+	#top-content .logo img:last-of-type {
+		width: 40px;
+		height: auto;
+	}
+
+	#top-content .navigation ol {
+		flex-direction: column;
+	}
+
+	#top-content .hiddenOnPhone {
+		display: none;
+	}
+
+	.hiddenOnComputer {
+		display: block;
+	}
+}
+
 /* --------------------------------- FOOTER --------------------------------- */
 
 #bottom-content {
@@ -132,6 +169,11 @@ body {
 	padding: 80px 100px;
 	justify-content: space-evenly;
 	background-color: var(--primary-background-color);
+}
+
+#bottom-content a, #bottom-conten h3 {
+	transition: all 0.25s;
+	font-family: "Roboto Mono";
 }
 
 #bottom-content section {
@@ -164,3 +206,27 @@ body {
 /* #bottom-content .genveje figure:nth-of-type(4) {
 	margin-top: 48px;
 } */
+
+/* --------------------- RESIZE */
+
+@media screen and (max-width: 800px) {
+	#bottom-content {
+		gap: 25px;
+		flex-direction: column;
+	}
+
+	#bottom-content section {
+		text-align: center;
+		align-items: center;
+	}
+
+	#bottom-content section figure {
+		width: 200px;
+		margin: 0;
+	}
+
+	#bottom-content .genveje {
+		width: 200px;
+		height: fit-content;
+	}
+}
