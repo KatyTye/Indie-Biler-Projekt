@@ -52,7 +52,103 @@
 	</header>
 
 	<main id="content">
+		<figure class="top-image">
+			<img src="/imgs/garage.jpg" alt="garage billede">
+			<section>
+				<h2>REPARATION <span>AF DINE BILER</span></h2>
+				<p>Du kan få billige reparationer her hos os.</p>
+				<a href="kontakt.html?rep=true">Læs mere</a>
+			</section>
+		</figure>
 
+		<form action="priser.html" id="carSearch">
+			<label for="input-producer">
+				Producent
+				<select name="Producer" id="input-producer">
+					<option value="All">Alle Mærker</option>
+					<option value="Volkswagen">Volkswagen</option>
+					<option value="Toyota">Toyota</option>
+					<option value="Skoda">Skoda</option>
+				</select>
+			</label>
+
+			<label for="input-Model">
+				Model
+				<select name="Models" id="input-Model">
+					<option value="All">Alle Modeler</option>
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C">C</option>
+				</select>
+			</label>
+			
+			<label for="input-fuel">
+				Brændstof
+				<select name="Fuel" id="input-fuel">
+					<option value="All">Alle Typer</option>
+					<option value="Benzin">Benzin</option>
+					<option value="Dissel">Dissel</option>
+					<option value="Power">Elektrisk</option>
+				</select>
+			</label>
+		</form>
+
+		<article class="velkommen">
+			<h1>Velkommen til <span>Asfalt & Auto</span></h1>
+			<section class="priser">
+				<h3>LAVE PRISER</h3>
+				<p>Vi har altid lave priser, på alle biler og bildele. Kig dig omkring og begynd sparing.</p>
+			</section>
+			<section class="service">
+				<h3>GOD SERVICE</h3>
+				<p>Vi holder kontakten, du kan ringe skrive og sende emails. Samt kan du kommende ned i butiken og få hjælp til din bil hvis du mangler.</p>
+			</section>
+			<section class="udvalg">
+				<h3>GODT UDVALG</h3>
+				<p>Vi har bildelene for dig, kig rundt og find de bildele du mangler, med vores store udvalg.</p>
+			</section>
+		</article>
+
+		<article class="gallery">
+			<h2>VORES BILER</h2>
+
+			<section class="img-holder">
+				<figure class="holder-item">
+					<img src="/imgs/Toyota.jpg" alt="sej bil">
+					<h3>Meget Sej Bil</h3>
+					<ol>
+						<li><img src="/imgs/icons/favicon.svg" alt="kørte kilometer ikon"><p>100000</p></li>
+						<li><img src="/imgs/icons/favicon.svg" alt="type af brændstof"><p>Benzin</p></li>
+					</ol>
+				</figure>
+				<figure class="holder-item">
+					<img src="/imgs/Toyota.jpg" alt="sej bil">
+					<h3>Meget Sej Bil</h3>
+					<ol>
+						<li><img src="/imgs/icons/favicon.svg" alt="kørte kilometer ikon"><p>100000</p></li>
+						<li><img src="/imgs/icons/favicon.svg" alt="type af brændstof"><p>Benzin</p></li>
+					</ol>
+				</figure>
+				<figure class="holder-item">
+					<img src="/imgs/Toyota.jpg" alt="sej bil">
+					<h3>Meget Sej Bil</h3>
+					<ol>
+						<li><img src="/imgs/icons/favicon.svg" alt="kørte kilometer ikon"><p>100000</p></li>
+						<li><img src="/imgs/icons/favicon.svg" alt="type af brændstof"><p>Benzin</p></li>
+					</ol>
+				</figure>
+				<figure class="holder-item">
+					<img src="/imgs/Toyota.jpg" alt="sej bil">
+					<h3>Meget Sej Bil</h3>
+					<ol>
+						<li><img src="/imgs/icons/favicon.svg" alt="kørte kilometer ikon"><p>100000</p></li>
+						<li><img src="/imgs/icons/favicon.svg" alt="type af brændstof"><p>Benzin</p></li>
+					</ol>
+				</figure>
+			</section>
+
+			<button id="biler-knap">SE ALLE BILER</button>
+		</article>
 	</main>
 
 	<footer id="bottom-content">
@@ -79,6 +175,10 @@
 					href="https://maps.app.goo.gl/vfFcCBQP7bmT4t3k9" target="_blank">Find os</a></figure>
 		</section>
 	</footer>
+
+	<figure id="top-button">
+		<img src="/imgs/icons/up-arrow.svg" alt="gå til toppen af siden ikon">
+	</figure>
 </body>
 
 </html>
