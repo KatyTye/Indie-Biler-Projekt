@@ -16,31 +16,34 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Tagesschrift&display=swap"
 		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Tagesschrift&display=swap"
+		rel="stylesheet">
+	<script src="/main.js" defer></script>
 	<link rel="icon" href="/imgs/icons/favicon.svg">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/kontakt.css">
 </head>
 
 <body>
 	<header id="top-content">
 		<figure class="logo">
 			<img src="/imgs/icons/logo.svg" alt="hjemmeside logo" loading="lazy">
+			<img src="/imgs/icons/burger.svg" alt="burger button icon" loading="lazy" id="burger-button"
+				class="hiddenOnComputer none">
 		</figure>
-		<nav class="navigation">
+		<nav class="navigation hiddenOnPhone">
 			<ol class="list">
 				<li><a href="priser.html">Priser</a></li>
-				<li><a href="kontakt.html" id="selected">Kontakt Os</a></li>
+				<li><a href="kontakt.html">Kontakt Os</a></li>
 				<li><a href="vurdering.html">Bilvurdering</a></li>
-				<li>
+				<li class="hiddenOnPhone">
 					<figure><img src="/imgs/icons/search.svg" alt="søg ikon" loading="lazy">
 						<p>Søg</p>
 					</figure>
 				</li>
 			</ol>
 		</nav>
-
-		<figure id="burger-button" class="hiddenOnComputer none">
-			<img src="/imgs/icons/burger.svg" alt="burger button icon" loading="lazy">
-		</figure>
 
 		<form action="priser.html" id="search-form" class="none">
 			<div class="bar">
@@ -51,10 +54,34 @@
 	</header>
 
 	<main id="content">
+		<figure class="top-image">
+			<img src="/imgs/biler.jpg" alt="et billede af biler" loading="lazy">
+			<form action="?tak=true" id="contact-form">
+				<label for="navn">
+					Fornavn:
+					<input type="text" name="navn" id="navn" placeholder="Indsæt dit fornavn her" required>
+				</label>
+				<label for="phonenumber">
+					Telefonnummer:
+					<input type="text" name="phonenumber" id="phonenumber" placeholder="Indsæt dit telefonnummer her" required>
+				</label>
 
+				<label for="email">
+					E-Mail:
+					<input type="email" name="email" id="email" placeholder="Indsæt din e-mail her" required>
+				</label>
+
+				<label for="message">
+					Besked:
+					<textarea name="message" id="message" placeholder="Indsæt din besked her" required></textarea>
+				</label>
+				<a href="" target="_blank">Find ud af vores lokationer</a>
+				<button id="contact-form-submit">SEND</button>
+			</form>
+		</figure>
 	</main>
 
-	<footer class="bottom-content">
+	<footer id="bottom-content">
 		<section class="kontakt">
 			<h3>Kontakt Info</h3>
 			<figure><img src="/imgs/icons/locastion.svg" alt="pinpoint ikon"><a
@@ -78,6 +105,10 @@
 					href="https://maps.app.goo.gl/vfFcCBQP7bmT4t3k9" target="_blank">Find os</a></figure>
 		</section>
 	</footer>
+
+	<figure id="top-button">
+		<img src="/imgs/icons/up-arrow.svg" alt="gå til toppen af siden ikon">
+	</figure>
 </body>
 
 </html>

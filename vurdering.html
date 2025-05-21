@@ -16,31 +16,34 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Tagesschrift&display=swap"
 		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Tagesschrift&display=swap"
+		rel="stylesheet">
+	<script src="/main.js" defer></script>
 	<link rel="icon" href="/imgs/icons/favicon.svg">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/vurder.css">
 </head>
 
 <body>
 	<header id="top-content">
 		<figure class="logo">
 			<img src="/imgs/icons/logo.svg" alt="hjemmeside logo" loading="lazy">
+			<img src="/imgs/icons/burger.svg" alt="burger button icon" loading="lazy" id="burger-button"
+				class="hiddenOnComputer none">
 		</figure>
-		<nav class="navigation">
+		<nav class="navigation hiddenOnPhone">
 			<ol class="list">
 				<li><a href="priser.html">Priser</a></li>
 				<li><a href="kontakt.html">Kontakt Os</a></li>
-				<li><a href="vurdering.html" id="selected">Bilvurdering</a></li>
-				<li>
+				<li><a href="vurdering.html">Bilvurdering</a></li>
+				<li class="hiddenOnPhone">
 					<figure><img src="/imgs/icons/search.svg" alt="søg ikon" loading="lazy">
 						<p>Søg</p>
 					</figure>
 				</li>
 			</ol>
 		</nav>
-
-		<figure id="burger-button" class="hiddenOnComputer none">
-			<img src="/imgs/icons/burger.svg" alt="burger button icon" loading="lazy">
-		</figure>
 
 		<form action="priser.html" id="search-form" class="none">
 			<div class="bar">
@@ -51,10 +54,49 @@
 	</header>
 
 	<main id="content">
+		<figure class="top-image">
+			<img src="/imgs/biler.jpg" alt="et billede af biler" loading="lazy">
+			<form action="?" id="vurder-form">
+				<label for="input-producer">
+					Producent
+					<select name="Producer" id="input-producer">
+						<option value="All">Alle Mærker</option>
+						<option value="Volkswagen">Volkswagen</option>
+						<option value="Toyota">Toyota</option>
+						<option value="Skoda">Skoda</option>
+					</select>
+				</label>
 
+				<label for="input-Model">
+					Model:
+					<select name="Models" id="input-Model">
+						<option value="All">Alle Modeler</option>
+						<option value="A">A</option>
+						<option value="B">B</option>
+						<option value="C">C</option>
+					</select>
+				</label>
+
+				<label for="input-damage">
+					Skader:
+					<select name="Damages" id="input-damage">
+						<option value="none">Find skader</option>
+						<option value="model1">Motor (meget skadet)</option>
+						<option value="model2">Motor (skadet)</option>
+						<option value="model3">Motor (lidt skadet)</option>
+
+						<option value="model1">Fælge (meget skadet)</option>
+						<option value="model2">Fælge (Fælge)</option>
+						<option value="model3">Fælge (lidt skadet)</option>
+					</select>
+				</label>
+
+				<button id="contact-form-submit">VURDER</button>
+			</form>
+		</figure>
 	</main>
 
-	<footer class="bottom-content">
+	<footer id="bottom-content">
 		<section class="kontakt">
 			<h3>Kontakt Info</h3>
 			<figure><img src="/imgs/icons/locastion.svg" alt="pinpoint ikon"><a
@@ -78,6 +120,10 @@
 					href="https://maps.app.goo.gl/vfFcCBQP7bmT4t3k9" target="_blank">Find os</a></figure>
 		</section>
 	</footer>
+
+	<figure id="top-button">
+		<img src="/imgs/icons/up-arrow.svg" alt="gå til toppen af siden ikon">
+	</figure>
 </body>
 
 </html>

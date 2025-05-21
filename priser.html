@@ -16,31 +16,34 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Tagesschrift&display=swap"
 		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Tagesschrift&display=swap"
+		rel="stylesheet">
+	<script src="/main.js" defer></script>
 	<link rel="icon" href="/imgs/icons/favicon.svg">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/priser.css">
 </head>
 
 <body>
 	<header id="top-content">
 		<figure class="logo">
 			<img src="/imgs/icons/logo.svg" alt="hjemmeside logo" loading="lazy">
+			<img src="/imgs/icons/burger.svg" alt="burger button icon" loading="lazy" id="burger-button"
+				class="hiddenOnComputer none">
 		</figure>
-		<nav class="navigation">
+		<nav class="navigation hiddenOnPhone">
 			<ol class="list">
-				<li><a href="priser.html" id="selected">Priser</a></li>
+				<li><a href="priser.html">Priser</a></li>
 				<li><a href="kontakt.html">Kontakt Os</a></li>
 				<li><a href="vurdering.html">Bilvurdering</a></li>
-				<li>
+				<li class="hiddenOnPhone">
 					<figure><img src="/imgs/icons/search.svg" alt="søg ikon" loading="lazy">
 						<p>Søg</p>
 					</figure>
 				</li>
 			</ol>
 		</nav>
-
-		<figure id="burger-button" class="hiddenOnComputer none">
-			<img src="/imgs/icons/burger.svg" alt="burger button icon" loading="lazy">
-		</figure>
 
 		<form action="priser.html" id="search-form" class="none">
 			<div class="bar">
@@ -51,10 +54,69 @@
 	</header>
 
 	<main id="content">
+		<section id="search">
+			<h2>RESULTATER PÅ <span>DIN SØGNING</span></h2>
+			<h3>BILUDSTYR:</h3>
+			<div id="search-output-one"></div>
+			<h3>BILER:</h3>
+			<div id="search-output-two"></div>
+		</section>
 
+		<section id="find">
+			<h2>FIND DINE FREMTIDIGE <span>BILER</span> OG <span>BILDELE</span> HER</h2>
+			<form action="#" id="filter-form">
+				<label for="input-type">
+					TYPE:
+					<select name="input-type" id="input-type">
+						<option value="All">Alle typer</option>
+						<option value="Parts">Biludstyr</option>
+						<option value="Cars">Biler</option>
+					</select>
+				</label>
+				<label for="input-price">
+					PRIS:
+					<select name="input-price" id="input-price">
+						<option value="All">Alle priser</option>
+						<option value="100">0-100 kr</option>
+						<option value="300">101-300 kr</option>
+						<option value="500">301-500 kr</option>
+						<option value="750">501-750 kr</option>
+						<option value="1000">751-1000 kr</option>
+						<option value="1001">1001+ kr</option>
+					</select>
+				</label>
+
+				<label for="input-color">
+					FARVE:
+					<select name="input-color" id="input-color">
+						<option value="All">Alle farver</option>
+						<option value="Black">Sort</option>
+						<option value="Gray">Grå</option>
+						<option value="Silver">Sølv</option>
+						<option value="White">Hvid</option>
+						<option value="Red">Rød</option>
+					</select>
+				</label>
+
+				<label for="input-weight">
+					VÆGT:
+					<select name="input-weight" id="input-weight">
+						<option value="All">Alle mængder</option>
+						<option value="250">0-250 kg</option>
+						<option value="500">251-500 kg</option>
+						<option value="1000">501-1000 kg</option>
+						<option value="1500">1001-1500 kg</option>
+						<option value="2000">1501-2000 kg</option>
+						<option value="2001+">2001+ kg</option>
+					</select>
+				</label>
+			</form>
+
+			<div id="filter-output"></div>
+		</section>
 	</main>
 
-	<footer class="bottom-content">
+	<footer id="bottom-content">
 		<section class="kontakt">
 			<h3>Kontakt Info</h3>
 			<figure><img src="/imgs/icons/locastion.svg" alt="pinpoint ikon"><a
@@ -78,6 +140,10 @@
 					href="https://maps.app.goo.gl/vfFcCBQP7bmT4t3k9" target="_blank">Find os</a></figure>
 		</section>
 	</footer>
+
+	<figure id="top-button">
+		<img src="/imgs/icons/up-arrow.svg" alt="gå til toppen af siden ikon">
+	</figure>
 </body>
 
 </html>
