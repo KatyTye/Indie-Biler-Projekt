@@ -1,0 +1,284 @@
+/* 
+
+			INDEX PAGE CSS ONLY
+
+*/
+
+/* --------------------------------- TOP IMAGE --------------------------------- */
+
+#content .top-image {
+	width: 100%;
+	height: 85vh;
+	display: flex;
+	color: white;
+	overflow: hidden;
+	position: relative;
+	min-height: 701px;
+	align-items: center;
+	justify-content: center;
+}
+
+#content .top-image img {
+	width: auto;
+	height: 150%;
+	position: absolute;
+}
+
+#content .top-image .underlay {
+	top: 50%;
+	right: 10%;
+	width: 400px;
+	height: 200%;
+	position: absolute;
+	transform: translate(-50%, -50%) rotate(25deg);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#content .top-image section {
+	top: 43%;
+	right: 5%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+#content .top-image section h2 {
+	font-size: 35px;
+	margin-left: 90px;
+	letter-spacing: 5px;
+	font-family: "Roboto Mono";
+}
+
+#content .top-image section h2 span {
+	display: block;
+	font-family: "Roboto Mono";
+}
+
+#content .top-image section p {
+	width: 330px;
+	font-size: 25px;
+	height: fit-content;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	letter-spacing: 3px;
+	font-weight: normal;
+}
+
+#content .top-image section a {
+	font-size: 30px;
+	color: #D97218;
+	margin-left: 40px;
+	font-family: "Share Tech";
+	text-decoration: underline;
+}
+
+/* --------------------------------- CAR SEARCH --------------------------------- */
+
+#carSearch {
+	gap: 5vw;
+	width: 100%;
+	display: flex;
+	min-height: 277px;
+	align-items: center;
+	justify-content: center;
+	background-color: #EDEDED;
+}
+
+#carSearch label {
+	gap: 5px;
+	display: flex;
+	flex-direction: column;
+	font-family: "Roboto Mono";
+}
+
+#carSearch button {
+	height: 50px;
+	border: none;
+	width: 153px;
+	font-size: 25px;
+	cursor: pointer;
+	margin-top: 26px;
+	font-family: "Share Tech";
+}
+
+#carSearch label select {
+	border: none;
+	outline: none;
+	padding: 15px;
+	font-size: 18px;
+	cursor: pointer;
+	color: #575757;
+	padding-right: 15px;
+	padding-right: 140px;
+	font-family: "Share Tech";
+	background-color: #d9d9d9;
+}
+
+#carSearch label select option {
+	font-family: "Share Tech";
+}
+
+/* --------------------------------- WELCOME --------------------------------- */
+
+#content .velkommen {
+	width: 100%;
+	text-align: center;
+	padding: 130px 0px;
+}
+
+#content .velkommen .sectionHolder .splitter {
+	width: 1px;
+	margin-top: auto;
+	height: 231px;
+	display: block;
+	background-color: #D9D9D9;
+}
+
+#content .velkommen h1 {
+	width: 100%;
+	font-size: 35px;
+	font-family: "Roboto Mono";
+}
+
+#content .velkommen h1 span {
+	color: #D97218;
+}
+
+#content .velkommen .sectionHolder {
+	gap: 25px;
+	display: flex;
+	justify-content: center;
+}
+
+#content .velkommen section {
+	width: 16%;
+	margin-bottom: 50px;
+}
+
+#content .velkommen section:last-of-type {
+	width: 17%;
+}
+
+#content .velkommen section p {
+	text-align: left;
+	font-size: 15px;
+	margin-top: 40px;
+	font-family: "Roboto Mono";
+}
+
+#content .velkommen section h3 {
+	width: 100%;
+	font-size: 25px;
+	margin-top: 180px;
+	font-family: "Roboto Mono";
+}
+
+/* --------------------------------- GALLERY --------------------------------- */
+
+#content .gallery {
+	width: 100vw;
+	height: 650px;
+	padding: 50px;
+	overflow: hidden;
+	background-color: #EDEDED;
+}
+
+#content .gallery h2 {
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 50px;
+	font-family: "Roboto Mono";
+}
+
+#content .gallery h2 span {
+	color: #D97218;
+	font-family: "Roboto Mono";
+}
+
+#content .gallery .img-holder {
+	gap: 25px;
+	width: 100%;
+	display: flex;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	scrollbar-width: none;
+}
+
+#content .gallery .img-holder figure {
+	background: white;
+	padding-bottom: 10px;
+}
+
+#content .gallery .img-holder figure img {
+	width: auto;
+	height: 280px;
+	cursor: pointer;
+}
+
+#content .gallery .img-holder figure h3 {
+	width: 100%;
+	font-size: 25px;
+	cursor: pointer;
+	text-align: center;
+	font-family: "Roboto Mono";
+}
+
+#content .gallery .img-holder figure h3::after {
+	content: "";
+	width: 85%;
+	height: 1px;
+	display: block;
+	font-size: 25px;
+	margin: 5px auto;
+	text-align: center;
+	background: #D9D9D9;
+	font-family: "Roboto Mono";
+}
+
+#content .gallery .img-holder figure ol {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#content .gallery .img-holder figure ol li {
+	gap: 5px;
+	display: inherit;
+	width: fit-content;
+	align-items: center;
+}
+
+#content .gallery .img-holder figure ol li img {
+	height: auto;
+	width: 40px;
+}
+
+#content .gallery .img-holder figure ol li p {
+	font-family: "Roboto Mono";
+}
+
+
+/* --------------------------------- RESIZE --------------------------------- */
+
+@media screen and (max-width: 1000px) {
+
+	/* ------------------ TOP IMAGE */
+	#content .top-image section a {
+		margin-left: 0;
+	}
+
+	#content .top-image section h2 {
+		margin-left: 0;
+	}
+
+	#content .top-image .underlay {
+		width: 500px;
+		transform: translate(-50%, -50%) rotate(90deg);
+	}
+
+	#content .top-image section {
+		top: 50%;
+		left: 50%;
+		text-align: center;
+	}
+}
