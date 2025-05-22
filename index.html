@@ -19,7 +19,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Tagesschrift&display=swap"
 		rel="stylesheet">
-	<script src="/main.js" defer></script>
+	<script src="/js/main.js" defer></script>
 	<link rel="icon" href="/imgs/icons/favicon.svg">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/index.css">
@@ -27,8 +27,8 @@
 
 <body>
 	<header id="top-content">
-		<figure class="logo" onclick="location = 'index.html'">
-			<img src="/imgs/icons/logo.svg" alt="hjemmeside logo" loading="lazy">
+		<figure class="logo">
+			<img src="/imgs/icons/logo.svg" alt="hjemmeside logo" loading="lazy" onclick="changePage('index.html')">
 			<img src="/imgs/icons/burger.svg" alt="burger button icon" loading="lazy" id="burger-button"
 				class="hiddenOnComputer none">
 		</figure>

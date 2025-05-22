@@ -12,3 +12,8 @@ burgerButtonDOM.addEventListener("click", () => {
 		burgerMenuDOM.classList.add("none")
 	}
 })
+
+function changePage(page) {
+	console.log("CLICK DETECTED")
+	document.location = page
+}
