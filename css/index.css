@@ -175,15 +175,27 @@
 /* --------------------------------- GALLERY --------------------------------- */
 
 #content .gallery {
+	display: flex;
 	width: 100vw;
 	height: 650px;
 	padding: 50px;
 	overflow: hidden;
+	align-items: center;
+	flex-direction: column;
 	background-color: #EDEDED;
 }
 
+#content .gallery #biler-knap {
+	border: none;
+	outline: none;
+	font-size: 20px;
+	cursor: pointer;
+	margin-top: 50px;
+	padding: 10px 50px;
+	font-family: "Share Tech";
+}
+
 #content .gallery h2 {
-	width: 100%;
 	font-size: 30px;
 	text-align: center;
 	margin-bottom: 50px;
@@ -209,7 +221,7 @@
 	padding-bottom: 10px;
 }
 
-#content .gallery .img-holder figure img {
+#content .gallery .img-holder figure>img {
 	width: auto;
 	height: 280px;
 	cursor: pointer;
@@ -250,7 +262,7 @@
 
 #content .gallery .img-holder figure ol li img {
 	height: auto;
-	width: 40px;
+	width: 30px;
 }
 
 #content .gallery .img-holder figure ol li p {
@@ -280,5 +292,47 @@
 		top: 50%;
 		left: 50%;
 		text-align: center;
+	}
+
+	/* ------------------ CAR SEARCH */
+
+	#content #carSearch {
+		padding: 50px;
+		flex-direction: column;
+	}
+
+	#content #carSearch button {
+		width: 270px;
+	}
+
+	#content #carSearch label:last-of-type select {
+		padding-right: 160px;
+	}
+
+	/* ------------------ VELKOMMEN */
+
+	#content .velkommen .sectionHolder {
+		gap: 0;
+		width: 100%;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	#content .velkommen .sectionHolder .splitter {
+		display: none;
+	}
+
+	#content .velkommen .sectionHolder section {
+		width: 225px;
+	}
+
+	#content .velkommen .sectionHolder section h3 {
+		margin-top: 50px;
+	}
+
+	/* ------------------ GALLERY */
+
+	#content .gallery .img-holder figure>img {
+		height: 28vw;
 	}
 }
