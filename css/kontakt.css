@@ -1,0 +1,92 @@
+/* 
+
+			KONTAKT PAGE CSS ONLY
+
+*/
+
+/* --------------------------------- FORM --------------------------------- */
+
+#content .top-image {
+	overflow: hidden;
+	position: relative;
+}
+
+#content .top-image img {
+	z-index: -1;
+	width: auto;
+	height: 100vh;
+	position: absolute;
+}
+
+#content #contact-form {
+	gap: 40px;
+	display: flex;
+	width: 100vw;
+	padding: 50px;
+	align-items: center;
+	flex-direction: column;
+}
+
+#content #contact-form h2 {
+	font-size: 50px;
+	color: #D97218;
+	font-family: "Roboto Flex";
+}
+
+#content #contact-form label {
+	gap: 10px;
+	font-size: 17px;
+	display: inherit;
+	border-radius: 5px;
+	flex-direction: inherit;
+	font-family: "Roboto Mono";
+	color: var(--primary-background-color);
+}
+
+#content #contact-form a {
+	font-weight: bold;
+	color: #D97218;
+	text-decoration: underline;
+	font-family: "Roboto Mono";
+	text-shadow: 0px 0px 5px black;
+}
+
+#content #contact-form button {
+	border: none;
+	font-size: 25px;
+	padding: 8px 222px;
+	font-family: "Share Tech";
+}
+
+#content #contact-form label input,
+textarea {
+	resize: none;
+	border: none;
+	outline: none;
+	width: 500px;
+	height: 166px;
+	padding: 10px;
+	font-size: 18px;
+	color: #575757;
+	border-radius: 5px;
+	font-family: "Share Tech";
+	background-color: #D9D9D9;
+}
+
+#content #contact-form label input {
+	height: fit-content;
+}
+
+/* --------------------------------- RESIZE --------------------------------- */
+
+@media screen and (max-width: 550px) {
+
+	#content #contact-form button {
+		padding: 8px 32vw;
+	}
+
+	#content #contact-form label input,
+	textarea {
+		width: 75vw;
+	}
+}

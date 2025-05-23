@@ -19,6 +19,9 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Tagesschrift&display=swap"
 		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Tagesschrift&display=swap"
+		rel="stylesheet">
 	<script src="/js/main.js" defer></script>
 	<link rel="icon" href="/imgs/icons/favicon.svg">
 	<link rel="stylesheet" href="/css/style.css">
@@ -35,7 +38,7 @@
 		<nav class="navigation hiddenOnPhone">
 			<ol class="list">
 				<li><a href="priser.html">Priser</a></li>
-				<li><a href="kontakt.html">Kontakt Os</a></li>
+				<li><a href="kontakt.html" id="selected">Kontakt Os</a></li>
 				<li><a href="vurdering.html">Bilvurdering</a></li>
 				<li class="hiddenOnPhone">
 					<figure><img src="/imgs/icons/search.svg" alt="søg ikon" loading="lazy">
@@ -57,13 +60,15 @@
 		<figure class="top-image">
 			<img src="/imgs/biler.jpg" alt="et billede af biler" loading="lazy">
 			<form action="?tak=true" id="contact-form">
+				<h2>KONTAKT OS</h2>
 				<label for="navn">
 					Fornavn:
 					<input type="text" name="navn" id="navn" placeholder="Indsæt dit fornavn her" required>
 				</label>
 				<label for="phonenumber">
 					Telefonnummer:
-					<input type="text" name="phonenumber" id="phonenumber" placeholder="Indsæt dit telefonnummer her" required>
+					<input type="text" name="phonenumber" id="phonenumber" placeholder="Indsæt dit telefonnummer her"
+						required>
 				</label>
 
 				<label for="email">
@@ -75,7 +80,7 @@
 					Besked:
 					<textarea name="message" id="message" placeholder="Indsæt din besked her" required></textarea>
 				</label>
-				<a href="" target="_blank">Find ud af vores lokationer</a>
+				<a href="https://maps.app.goo.gl/vfFcCBQP7bmT4t3k9" target="_blank">Find ud af vores lokationer</a>
 				<button id="contact-form-submit">SEND</button>
 			</form>
 		</figure>
