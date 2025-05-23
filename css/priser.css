@@ -1,0 +1,184 @@
+/* 
+
+			KONTAKT PAGE CSS ONLY
+
+*/
+
+/* --------------------------------- ALL --------------------------------- */
+
+#content {
+	padding: 50px 0px;
+	background-color: #EDEDED;
+}
+
+/* --------------------------------- SEARCH --------------------------------- */
+
+#content #search {
+	display: flex;
+	width: 100vw;
+	flex-direction: column;
+}
+
+#content #search h2 {
+	font-size: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	font-family: "Share Tech";
+}
+
+#content #search h2 span {
+	color: #D97218;
+	font-family: inherit;
+}
+
+#content #search div {
+	gap: 25px;
+	width: 100%;
+	display: flex;
+	padding: 25px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#content #search div .item {
+	display: flex;
+	height: 100px;
+	cursor: pointer;
+	align-items: center;
+	flex-direction: row;
+	border-radius: 25px;
+	background-color: white;
+	justify-content: space-between;
+}
+
+#content #search div .item figure {
+	height: auto;
+	width: 100px;
+}
+
+#content #search div .item img {
+	border-radius: 100px;
+}
+
+#content #search div .item section h3 {
+	margin: 0;
+}
+
+#content #search h3 {
+	margin-left: 50px;
+}
+
+/* --------------------------------- FILTER --------------------------------- */
+
+#content #find {
+	width: 100%;
+}
+
+#content #find h2 {
+	font-size: 30px;
+	margin-left: auto;
+	text-align: center;
+	margin-right: auto;
+	margin-bottom: 40px;
+	font-family: "Share Tech";
+}
+
+#content #find h2 span {
+	color: #D97218;
+	font-family: inherit;
+}
+
+#content #find .flex-holder {
+	gap: 25px;
+	width: 100%;
+	display: flex;
+	padding-left: 35px;
+}
+
+#content #find .flex-holder>div {
+	gap: 25px;
+	width: 65%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: left;
+}
+
+#content #find .flex-holder>div .item {
+	padding: 10px;
+	width: 250px;
+	height: 250px;
+	cursor: pointer;
+	display: inherit;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+	justify-content: space-evenly;
+}
+
+#content #find .flex-holder>div .item img {
+	border-radius: 10px;
+}
+
+#content #find .flex-holder>div .item figure {
+	width: 100%;
+	height: auto;
+}
+
+#content #find .flex-holder>div .item p {
+	font-family: "Noto Sans";
+}
+
+#content #find .flex-holder form {
+	gap: 10px;
+	display: inherit;
+	align-items: center;
+	padding: 40px 10px;
+	flex-direction: column;
+	background-color: white;
+}
+
+#content #find .flex-holder form h2 {
+	font-size: 30px;
+	font-family: "Share Tech";
+}
+
+#content #find .flex-holder form label {
+	gap: 5px;
+	display: inherit;
+	flex-direction: inherit;
+	font-family: "Roboto Mono";
+}
+
+#content #find .flex-holder form label select {
+	border: none;
+	outline: none;
+	max-width: 277px;
+	border-radius: 5px;
+	font-family: "Share Tech";
+	background-color: #D9D9D9;
+	padding: 12px 194px 12px 10px;
+}
+
+/* --------------------------------- RESIZE --------------------------------- */
+
+@media screen and (max-width: 1100px) {
+	#content #find .flex-holder div {
+		width: 55%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#content #find .flex-holder div {
+		width: 75%;
+	}
+
+	#content #find .flex-holder {
+		width: 100%;
+		padding-left: 0;
+		align-items: center;
+		flex-direction: column;
+	}
+}
