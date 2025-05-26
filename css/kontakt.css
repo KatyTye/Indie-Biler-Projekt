@@ -78,6 +78,31 @@ textarea {
 	height: fit-content;
 }
 
+#content #sell-page {
+	width: 100vw;
+	padding: 50px;
+	min-height: 880px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#content #sell-page h2 {
+	font-size: 50px;
+	color: #D97218;
+	font-family: "Roboto Flex";
+}
+
+#content #sell-page p {
+	gap: 10px;
+	font-size: 17px;
+	display: inherit;
+	border-radius: 5px;
+	flex-direction: inherit;
+	font-family: "Roboto Mono";
+	color: var(--primary-background-color);
+}
+
 /* --------------------------------- RESIZE --------------------------------- */
 
 @media screen and (max-width: 550px) {
