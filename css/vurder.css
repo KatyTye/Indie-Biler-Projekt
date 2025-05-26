@@ -1,0 +1,82 @@
+/* 
+
+			KONTAKT PAGE CSS ONLY
+
+*/
+
+/* --------------------------------- FORM --------------------------------- */
+
+#content .top-image {
+	overflow: hidden;
+	position: relative;
+}
+
+#content .top-image img {
+	z-index: -1;
+	width: auto;
+	height: 120vh;
+	position: absolute;
+}
+
+#content #vurder-form {
+	gap: 40px;
+	display: flex;
+	width: 100vw;
+	padding: 50px;
+	min-height: 880px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#content #vurder-form h2 {
+	font-size: 50px;
+	color: #D97218;
+	font-family: "Roboto Flex";
+}
+
+#content #vurder-form label {
+	gap: 10px;
+	font-size: 17px;
+	display: inherit;
+	border-radius: 5px;
+	flex-direction: inherit;
+	font-family: "Roboto Mono";
+	color: var(--primary-background-color);
+}
+
+#content #vurder-form button {
+	border: none;
+	font-size: 25px;
+	cursor: pointer;
+	padding: 8px 222px;
+	font-family: "Share Tech";
+}
+
+#content #vurder-form label select {
+	resize: none;
+	border: none;
+	outline: none;
+	width: 500px;
+	height: fit-content;
+	padding: 10px;
+	font-size: 18px;
+	cursor: pointer;
+	color: #575757;
+	border-radius: 5px;
+	font-family: "Share Tech";
+	background-color: #D9D9D9;
+}
+
+/* --------------------------------- RESIZE --------------------------------- */
+
+@media screen and (max-width: 550px) {
+
+	#content #vurder-form button {
+		padding: 8px 32vw;
+	}
+
+	#content #vurder-form label select {
+		width: 75vw;
+	}
+}

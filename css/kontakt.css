@@ -14,7 +14,7 @@
 #content .top-image img {
 	z-index: -1;
 	width: auto;
-	height: 100vh;
+	height: 120vh;
 	position: absolute;
 }
 
@@ -54,6 +54,7 @@
 #content #contact-form button {
 	border: none;
 	font-size: 25px;
+	cursor: pointer;
 	padding: 8px 222px;
 	font-family: "Share Tech";
 }
