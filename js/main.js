@@ -22,7 +22,6 @@ setTimeout(() => {
 	const burgerMenuDOM = document.querySelector("#search-form")
 	const navSearchButtonDOM = document.querySelector("#navSearchButton")
 	const navigationMenu = document.querySelector("#top-content .navigation")
-	const modalMenu = document.querySelector("#product")
 
 	// ------------------------ EVENTS ------------------------
 

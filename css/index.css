@@ -211,12 +211,16 @@
 	gap: 25px;
 	width: 100%;
 	display: flex;
+	height: 390px;
+	position: relative;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	scrollbar-width: none;
 }
 
 #content .gallery .img-holder figure {
+	left: 100vw;
+	position: absolute;
 	background: white;
 	padding-bottom: 10px;
 }
@@ -269,8 +273,37 @@
 	font-family: "Roboto Mono";
 }
 
+#content .gallery .img-holder figure:nth-child(1) {
+	animation: toLEFT 25s linear infinite;
+}
 
-/* --------------------------------- RESIZE --------------------------------- */
+#content .gallery .img-holder figure:nth-child(2) {
+	animation: toLEFT 25s linear infinite 5s;
+}
+
+#content .gallery .img-holder figure:nth-child(3) {
+	animation: toLEFT 25s linear infinite 10s;
+}
+
+#content .gallery .img-holder figure:nth-child(4) {
+	animation: toLEFT 25s linear infinite 15s;
+}
+
+#content .gallery .img-holder figure:nth-child(5) {
+	animation: toLEFT 25s linear infinite 20s;
+}
+
+/* --------------------------------- RESIZE & KEYFRAME --------------------------------- */
+
+@keyframes toLEFT {
+	from {
+		left: 100vw;
+	}
+
+	to {
+		left: -25vw;
+	}
+}
 
 @media screen and (max-width: 1000px) {
 
