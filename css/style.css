@@ -78,6 +78,12 @@ button:hover {
 	background-color: var(--secondary-button-color);
 }
 
+.none {
+	display: none;
+}
+
+/* --------------------------------- TO TOP */
+
 #top-button {
 	left: 25px;
 	width: 50px;
@@ -97,8 +103,53 @@ button:hover {
 	width: 35px;
 }
 
-.none {
-	display: none;
+/* --------------------------------- MODAL */
+
+#product {
+	border: none;
+	outline: none;
+	padding: 25px;
+	border-radius: 5px;
+}
+
+#product figure {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#product figure img {
+	width: 25px;
+	cursor: pointer;
+}
+
+#product h2 {
+	width: 100%;
+	text-align: center;
+	margin: 10px 0;
+	font-family: "Roboto Mono";
+}
+
+#product h3 {
+	font-size: 15px;
+	margin-top: 10px;
+	font-weight: normal;
+	font-family: "Noto Sans";
+}
+
+#product h3 span {
+	font-weight: bold;
+}
+
+#product p {
+	width: 500px;
+	margin-top: 10px;
+}
+
+#product img {
+	width: 500px;
+	border-radius: 5px;
 }
 
 /* --------------------------------- HEADER --------------------------------- */

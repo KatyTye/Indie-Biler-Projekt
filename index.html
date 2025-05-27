@@ -99,8 +99,8 @@
 
 			<section class="img-holder">
 				<figure class="holder-item">
-					<img src="/imgs/Toyota.jpg" alt="sej bil">
-					<h3>Meget Sej Bil</h3>
+					<img src="/imgs/Toyota.jpg" alt="sej bil" onclick="openProductModal(1)">
+					<h3 onclick="openProductModal(1)">Meget Sej Bil</h3>
 					<ol>
 						<li><img src="/imgs/icons/road.svg" alt="kørte kilometer ikon">
 							<p>100000</p>
@@ -111,8 +111,8 @@
 					</ol>
 				</figure>
 				<figure class="holder-item">
-					<img src="/imgs/Toyota.jpg" alt="sej bil">
-					<h3>Meget Sej Bil</h3>
+					<img src="/imgs/Toyota.jpg" alt="sej bil" onclick="openProductModal(1)">
+					<h3 onclick="openProductModal(1)">Meget Sej Bil</h3>
 					<ol>
 						<li><img src="/imgs/icons/road.svg" alt="kørte kilometer ikon">
 							<p>100000</p>
@@ -123,8 +123,8 @@
 					</ol>
 				</figure>
 				<figure class="holder-item">
-					<img src="/imgs/Toyota.jpg" alt="sej bil">
-					<h3>Meget Sej Bil</h3>
+					<img src="/imgs/Toyota.jpg" alt="sej bil" onclick="openProductModal(1)">
+					<h3 onclick="openProductModal(1)">Meget Sej Bil</h3>
 					<ol>
 						<li><img src="/imgs/icons/road.svg" alt="kørte kilometer ikon">
 							<p>100000</p>
@@ -135,8 +135,8 @@
 					</ol>
 				</figure>
 				<figure class="holder-item">
-					<img src="/imgs/Toyota.jpg" alt="sej bil">
-					<h3>Meget Sej Bil</h3>
+					<img src="/imgs/Toyota.jpg" alt="sej bil" onclick="openProductModal(1)">
+					<h3 onclick="openProductModal(1)">Meget Sej Bil</h3>
 					<ol>
 						<li><img src="/imgs/icons/road.svg" alt="kørte kilometer ikon">
 							<p>100000</p>
@@ -147,8 +147,8 @@
 					</ol>
 				</figure>
 				<figure class="holder-item">
-					<img src="/imgs/Toyota.jpg" alt="sej bil">
-					<h3>Meget Sej Bil</h3>
+					<img src="/imgs/Toyota.jpg" alt="sej bil" onclick="openProductModal(1)">
+					<h3 onclick="openProductModal(1)">Meget Sej Bil</h3>
 					<ol>
 						<li><img src="/imgs/icons/road.svg" alt="kørte kilometer ikon">
 							<p>100000</p>
@@ -159,8 +159,8 @@
 					</ol>
 				</figure>
 				<figure class="holder-item">
-					<img src="/imgs/Toyota.jpg" alt="sej bil">
-					<h3>Meget Sej Bil</h3>
+					<img src="/imgs/Toyota.jpg" alt="sej bil" onclick="openProductModal(1)">
+					<h3 onclick="openProductModal(1)">Meget Sej Bil</h3>
 					<ol>
 						<li><img src="/imgs/icons/road.svg" alt="kørte kilometer ikon">
 							<p>100000</p>
@@ -180,8 +180,11 @@
 	</footer>
 
 	<dialog id="product">
-		<img src="/imgs/Toyota.jpg" alt="et billedet af et produkt">
-		<h2>Titel Her</h2>
+		<figure>
+			<h2>Titel Her</h2>
+			<img src="/imgs/icons/close.svg" alt="et lukke menu ikon" onclick="closeProductModal()">
+		</figure>
+		<img src="/imgs/Toyota.jpg" alt="et billedet af et produkt" class="product-image">
 		<h3>Pris Her</h3>
 		<p>Beskrivelse Her</p>
 	</dialog>

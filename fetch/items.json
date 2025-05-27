@@ -1,0 +1,16 @@
+[
+	{
+		"id": 1,
+		"title": "Toyota Corolla 1986",
+		"pris": "599,98 kr.",
+		"url": "/imgs/Toyota.jpg",
+		"beskrivelse": "Den sejeste bil der findes, ingen kan kæmpe imod denne bils seje looks!"
+	},
+	{
+		"id": 2,
+		"title": "Donkraft Fl25te",
+		"pris": "9999,45 kr.",
+		"url": "/imgs/donkraft.png",
+		"beskrivelse": "Maksimal last [kg]: 2500 Løftedriftsart: Hydromekanisk Varenummer: S-FL25TE!"
+	}
+]
