@@ -1,5 +1,17 @@
 // ------------------------ FETCHES ------------------------
 
+fetch("/fetch/header.html")
+	.then(res => res.text())
+	.then(data => {
+		document.querySelector("#top-content").innerHTML = data
+	})
+
+fetch("/fetch/footer.html")
+	.then(res => res.text())
+	.then(data => {
+		document.querySelector("#bottom-content").innerHTML = data
+	})
+
 // ------------------------ CONSTS ------------------------
 
 const headerDOM = document.querySelector("#top-content")

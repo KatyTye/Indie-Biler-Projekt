@@ -1,0 +1,24 @@
+<figure class="logo">
+	<img src="/imgs/icons/logo.svg" alt="hjemmeside logo" loading="lazy" onclick="changePage('index.html')">
+	<img src="/imgs/icons/burger.svg" alt="burger button icon" loading="lazy" id="burger-button"
+		class="hiddenOnComputer none">
+</figure>
+<nav class="navigation hiddenOnPhone">
+	<ol class="list">
+		<li><a href="priser.html">Priser</a></li>
+		<li><a href="kontakt.html">Kontakt Os</a></li>
+		<li><a href="vurdering.html">Bilvurdering</a></li>
+		<li class="hiddenOnPhone" id="navSearchButton">
+			<figure><img src="/imgs/icons/search.svg" alt="søg ikon" loading="lazy">
+				<p>Søg</p>
+			</figure>
+		</li>
+	</ol>
+</nav>
+
+<form action="priser.html" id="search-form" class="none">
+	<div class="bar">
+		<input type="submit" value="">
+		<input type="search" name="search" id="search-input" placeholder="Søg igennem vores produktor og biler">
+	</div>
+</form>
