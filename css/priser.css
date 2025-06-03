@@ -95,6 +95,7 @@
 	width: 100%;
 	display: flex;
 	padding-left: 35px;
+	justify-content: center;
 }
 
 #content #find .flex-holder>div {

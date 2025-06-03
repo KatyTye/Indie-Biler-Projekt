@@ -1,6 +1,7 @@
 [
 	{
 		"id": 1,
+		"type": 2,
 		"title": "Toyota Corolla 1986",
 		"pris": "599,98 kr.",
 		"url": "/imgs/Toyota.jpg",
@@ -8,6 +9,7 @@
 	},
 	{
 		"id": 2,
+		"type": 1,
 		"title": "Donkraft Fl25te",
 		"pris": "9999,45 kr.",
 		"url": "/imgs/donkraft.png",
