@@ -3,16 +3,80 @@
 		"id": 1,
 		"type": 2,
 		"title": "Toyota Corolla 1986",
-		"pris": "599,98 kr.",
+		"pris": 599.98,
+		"vægt": 1250,
+		"farve": "All Silver Gray Black",
 		"url": "/imgs/Toyota.jpg",
 		"beskrivelse": "Den sejeste bil der findes, ingen kan kæmpe imod denne bils seje looks!"
 	},
 	{
 		"id": 2,
+		"type": 2,
+		"title": "Toyota Corolla 1995",
+		"pris": 799,
+		"vægt": 1600,
+		"farve": "All Silver Gray Black",
+		"url": "/imgs/Toyota.jpg",
+		"beskrivelse": "Den sejeste bil der findes, ingen kan kæmpe imod denne bils seje looks!"
+	},
+	{
+		"id": 3,
+		"type": 2,
+		"title": "Toyota Corolla 1956",
+		"pris": 399,
+		"vægt": 1000,
+		"farve": "All Silver Gray Black",
+		"url": "/imgs/Toyota.jpg",
+		"beskrivelse": "Den sejeste bil der findes, ingen kan kæmpe imod denne bils seje looks!"
+	},
+	{
+		"id": 4,
+		"type": 2,
+		"title": "Toyota Corolla 1955",
+		"pris": 359,
+		"vægt": 2500,
+		"farve": "All Silver Gray Black",
+		"url": "/imgs/Toyota.jpg",
+		"beskrivelse": "Den sejeste bil der findes, ingen kan kæmpe imod denne bils seje looks!"
+	},
+	{
+		"id": 5,
 		"type": 1,
 		"title": "Donkraft Fl25te",
-		"pris": "9999,45 kr.",
+		"pris": 9999.45,
+		"vægt": 20,
+		"farve": "All Blue Yellow Black",
 		"url": "/imgs/donkraft.png",
-		"beskrivelse": "Maksimal last [kg]: 2500 Løftedriftsart: Hydromekanisk Varenummer: S-FL25TE!"
+		"beskrivelse": "Maksimal last [kg]: 2400 Løftedriftsart: Hydromekanisk Varenummer: S-FL25TE!"
+	},
+	{
+		"id": 6,
+		"type": 1,
+		"title": "Donkraft Fl35te",
+		"pris": 11500,
+		"vægt": 50,
+		"farve": "All Blue Yellow Black",
+		"url": "/imgs/donkraft.png",
+		"beskrivelse": "Maksimal last [kg]: 3000 Løftedriftsart: Hydromekanisk Varenummer: S-FL35TE!"
+	},
+	{
+		"id": 7,
+		"type": 1,
+		"title": "Donkraft Fl05te",
+		"pris": 2999,
+		"vægt": 10,
+		"farve": "All Blue Yellow Black",
+		"url": "/imgs/donkraft.png",
+		"beskrivelse": "Maksimal last [kg]: 500 Løftedriftsart: Hydromekanisk Varenummer: S-FL05TE!"
+	},
+	{
+		"id": 8,
+		"type": 1,
+		"title": "Donkraft Fl15te",
+		"pris": 5999,
+		"vægt": 15,
+		"farve": "All Blue Yellow Black",
+		"url": "/imgs/donkraft.png",
+		"beskrivelse": "Maksimal last [kg]: 2000 Løftedriftsart: Hydromekanisk Varenummer: S-FL15TE!"
 	}
 ]

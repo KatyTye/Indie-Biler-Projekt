@@ -62,7 +62,7 @@ async function openProductModal(id) {
 	modalMenu.showModal()
 	modalMenu.querySelector(".product-image").src = json[id - 1].url
 	modalMenu.querySelector("h2").innerHTML = json[id - 1].title
-	modalMenu.querySelector("h3").innerHTML = "<span>Pris:</span> " + json[id - 1].pris
+	modalMenu.querySelector("h3").innerHTML = "<span>Pris:</span> " + json[id - 1].pris + " kr."
 	modalMenu.querySelector("p").innerHTML = json[id - 1].beskrivelse
 }
 

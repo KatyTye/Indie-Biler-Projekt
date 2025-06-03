@@ -71,111 +71,54 @@
 			<div class="flex-holder">
 				<form action="#" id="filter-form">
 					<h2>FILTER</h2>
-					<label for="input-type">
+					<label for="inputtype">
 						TYPE:
-						<select name="input-type" id="input-type">
-							<option value="All">Alle typer</option>
-							<option value="Parts">Biludstyr</option>
-							<option value="Cars">Biler</option>
+						<select name="inputtype" id="inputtype">
+							<option value="0">Alle typer</option>
+							<option value="1">Biludstyr</option>
+							<option value="2">Biler</option>
 						</select>
 					</label>
-					<label for="input-price">
+					<label for="inputprice">
 						PRIS:
-						<select name="input-price" id="input-price">
-							<option value="All">Alle priser</option>
+						<select name="inputprice" id="inputprice">
+							<option value="9999999">Alle priser</option>
 							<option value="100">0-100 kr</option>
-							<option value="300">101-300 kr</option>
-							<option value="500">301-500 kr</option>
-							<option value="750">501-750 kr</option>
-							<option value="1000">751-1000 kr</option>
-							<option value="1001">1001+ kr</option>
+							<option value="300">0-300 kr</option>
+							<option value="500">0-500 kr</option>
+							<option value="750">0-750 kr</option>
+							<option value="1000">0-1000 kr</option>
+							<option value="9999999">1000+ kr</option>
 						</select>
 					</label>
 
-					<label for="input-color">
+					<label for="inputcolor">
 						FARVE:
-						<select name="input-color" id="input-color">
+						<select name="inputcolor" id="inputcolor">
 							<option value="All">Alle farver</option>
 							<option value="Black">Sort</option>
 							<option value="Gray">Grå</option>
 							<option value="Silver">Sølv</option>
-							<option value="White">Hvid</option>
-							<option value="Red">Rød</option>
+							<option value="Blue">Blå</option>
+							<option value="Yellow">Gul</option>
 						</select>
 					</label>
 
-					<label for="input-weight">
+					<label for="inputweight">
 						VÆGT:
-						<select name="input-weight" id="input-weight">
-							<option value="All">Alle mængder</option>
+						<select name="inputweight" id="inputweight">
+							<option value="9999999">Alle mængder</option>
 							<option value="250">0-250 kg</option>
-							<option value="500">251-500 kg</option>
-							<option value="1000">501-1000 kg</option>
-							<option value="1500">1001-1500 kg</option>
-							<option value="2000">1501-2000 kg</option>
-							<option value="2001+">2001+ kg</option>
+							<option value="500">0-500 kg</option>
+							<option value="1000">0-1000 kg</option>
+							<option value="1500">0-1500 kg</option>
+							<option value="2000">0-2000 kg</option>
+							<option value="9999999">2000+ kg</option>
 						</select>
 					</label>
 				</form>
 
-				<div id="filter-output">
-					<div class="item">
-						<figure>
-							<img src="/imgs/Toyota.jpg" alt="en meget sej bil">
-						</figure>
-
-						<h3>TOYOTA COROLLA 1986</h3>
-						<p>5,45 kr.</p>
-					</div>
-					<div class="item">
-						<figure>
-							<img src="/imgs/Toyota.jpg" alt="en meget sej bil">
-						</figure>
-
-						<h3>TOYOTA COROLLA 1986</h3>
-						<p>5,45 kr.</p>
-					</div>
-					<div class="item">
-						<figure>
-							<img src="/imgs/Toyota.jpg" alt="en meget sej bil">
-						</figure>
-
-						<h3>TOYOTA COROLLA 1986</h3>
-						<p>5,45 kr.</p>
-					</div>
-					<div class="item">
-						<figure>
-							<img src="/imgs/Toyota.jpg" alt="en meget sej bil">
-						</figure>
-
-						<h3>TOYOTA COROLLA 1986</h3>
-						<p>5,45 kr.</p>
-					</div>
-					<div class="item">
-						<figure>
-							<img src="/imgs/Toyota.jpg" alt="en meget sej bil">
-						</figure>
-
-						<h3>TOYOTA COROLLA 1986</h3>
-						<p>5,45 kr.</p>
-					</div>
-					<div class="item">
-						<figure>
-							<img src="/imgs/Toyota.jpg" alt="en meget sej bil">
-						</figure>
-
-						<h3>TOYOTA COROLLA 1986</h3>
-						<p>5,45 kr.</p>
-					</div>
-					<div class="item">
-						<figure>
-							<img src="/imgs/Toyota.jpg" alt="en meget sej bil">
-						</figure>
-
-						<h3>TOYOTA COROLLA 1986</h3>
-						<p>5,45 kr.</p>
-					</div>
-				</div>
+				<div id="filter-output"></div>
 			</div>
 		</section>
 	</main>
