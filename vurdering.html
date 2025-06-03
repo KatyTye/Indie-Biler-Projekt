@@ -23,6 +23,7 @@
 		href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Tagesschrift&display=swap"
 		rel="stylesheet">
 	<script src="/js/main.js" defer></script>
+	<script src="js/vurder.js" defer></script>
 	<link rel="icon" href="/imgs/icons/favicon.svg">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/vurder.css">
@@ -35,11 +36,11 @@
 	<main id="content">
 		<figure class="top-image">
 			<img src="/imgs/biler.jpg" alt="et billede af biler" loading="lazy">
-			<form action="?" id="vurder-form">
+			<form id="vurder-form">
 				<h2>VURDER DIN BIL</h2>
-				<label for="input-producer">
+				<label for="inputproducer">
 					Producent
-					<select name="Producer" id="input-producer">
+					<select name="Producer" id="inputproducer">
 						<option value="All">Alle Mærker</option>
 						<option value="Volkswagen">Volkswagen</option>
 						<option value="Toyota">Toyota</option>
@@ -47,9 +48,9 @@
 					</select>
 				</label>
 
-				<label for="input-Model">
+				<label for="inputModel">
 					Model:
-					<select name="Models" id="input-Model">
+					<select name="Models" id="inputModel">
 						<option value="All">Alle Modeler</option>
 						<option value="A">A</option>
 						<option value="B">B</option>
@@ -57,9 +58,9 @@
 					</select>
 				</label>
 
-				<label for="input-damage">
+				<label for="inputdamage">
 					Skader:
-					<select name="Damages" id="input-damage">
+					<select name="Damages" id="inputdamage">
 						<option value="none">Find skader</option>
 						<option value="model1">Motor (meget skadet)</option>
 						<option value="model2">Motor (skadet)</option>
