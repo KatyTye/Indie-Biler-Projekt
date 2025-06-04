@@ -165,6 +165,15 @@ button:hover {
 	background-color: var(--primary-background-color);
 }
 
+#top-content form input {
+	border: none;
+	outline: none;
+	width: 250px;
+	padding: 12px;
+	border-radius: 100px;
+	background-color: var(--secondary-background-color);
+}
+
 #top-content .logo {
 	height: 79px;
 }
@@ -200,7 +209,13 @@ button:hover {
 
 /* --------------------- RESIZE */
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1200px) {
+	#top-content {
+		padding: 18px 25px;
+	}
+}
+
+@media screen and (max-width: 975px) {
 
 	#top-content {
 		gap: 25px;

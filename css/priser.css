@@ -94,7 +94,7 @@
 	gap: 25px;
 	width: 100%;
 	display: flex;
-	padding-left: 35px;
+	padding: 0px 35px;
 	justify-content: center;
 }
 
@@ -104,7 +104,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: left;
+	justify-content: center;
 }
 
 #content #find .flex-holder>div .item {
@@ -167,7 +167,7 @@
 
 @media screen and (max-width: 1100px) {
 	#content #find .flex-holder div {
-		width: 55%;
+		width: fit-content;
 	}
 }
 

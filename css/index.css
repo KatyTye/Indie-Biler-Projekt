@@ -177,9 +177,10 @@
 #content .gallery {
 	display: flex;
 	width: 100vw;
-	height: 650px;
+	height: fit-content;
 	padding: 50px;
 	overflow: hidden;
+	position: relative;
 	align-items: center;
 	flex-direction: column;
 	background-color: #EDEDED;
@@ -207,22 +208,50 @@
 	font-family: "Roboto Mono";
 }
 
+#content .gallery .left-button:hover,
+#content .gallery .right-button:hover {
+	background-color: rgb(217, 114, 24);
+}
+
+#content .gallery .left-button,
+#content .gallery .right-button {
+	top: 45%;
+	z-index: 1;
+	width: 50px;
+	height: 50px;
+	border: none;
+	padding: 7.5px;
+	cursor: pointer;
+	position: absolute;
+	transition: all 0.25s;
+	background-color: rgba(217, 114, 24, 0.9);
+}
+
+#content .gallery .left-button {
+	transform: rotate(180deg);
+	left: 25px;
+}
+
+#content .gallery .right-button {
+	right: 25px;
+}
+
 #content .gallery .img-holder {
-	gap: 25px;
+	gap: 2rem;
 	width: 100%;
 	display: flex;
-	height: 390px;
-	position: relative;
+	height: fit-content;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	scrollbar-width: none;
+	justify-content: center;
 }
 
 #content .gallery .img-holder figure {
-	left: 100vw;
-	position: absolute;
 	background: white;
 	padding-bottom: 10px;
+	transform: translateX(2.5%);
+	transition: transform 2s;
 }
 
 #content .gallery .img-holder figure>img {
@@ -273,37 +302,8 @@
 	font-family: "Roboto Mono";
 }
 
-#content .gallery .img-holder figure:nth-child(1) {
-	animation: toLEFT 25s linear infinite;
-}
-
-#content .gallery .img-holder figure:nth-child(2) {
-	animation: toLEFT 25s linear infinite 5s;
-}
-
-#content .gallery .img-holder figure:nth-child(3) {
-	animation: toLEFT 25s linear infinite 10s;
-}
-
-#content .gallery .img-holder figure:nth-child(4) {
-	animation: toLEFT 25s linear infinite 15s;
-}
-
-#content .gallery .img-holder figure:nth-child(5) {
-	animation: toLEFT 25s linear infinite 20s;
-}
 
 /* --------------------------------- RESIZE & KEYFRAME --------------------------------- */
-
-@keyframes toLEFT {
-	from {
-		left: 100vw;
-	}
-
-	to {
-		left: -25vw;
-	}
-}
 
 @media screen and (max-width: 1000px) {
 

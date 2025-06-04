@@ -7,9 +7,16 @@ const filterOutputDOM = document.querySelector("#filter-output")
 const params = new URLSearchParams(location.search)
 const searchInput = params.get("search")
 
-async function search() {
+async function search(val) {
 	const itemsFetch = await fetch("/fetch/items.json")
 	const items = await itemsFetch.json()
+	let Input
+
+	if (!val) {
+		input = searchInput
+	} else {
+		input = val
+	}
 
 	searchOutputOneDOM.querySelectorAll("div").forEach((elm) => {
 		elm.remove()
@@ -22,9 +29,8 @@ async function search() {
 	items.forEach((obj) => {
 		let searchObj = true
 
-		if (!obj["title"].toLowerCase().includes(searchInput.toLowerCase())) {
-			console.log(obj["title"].toLowerCase())
-			if (!obj["beskrivelse"].toLowerCase().includes(searchInput.toLowerCase())) {
+		if (!obj["title"].toLowerCase().includes(input.toLowerCase())) {
+			if (!obj["beskrivelse"].toLowerCase().includes(input.toLowerCase())) {
 				searchObj = false
 			}
 		}
@@ -36,15 +42,15 @@ async function search() {
 				searchOutputTwoDOM.innerHTML += `<div class="item" onclick="openProductModal(${obj["id"]})"><figure><img src="${obj["url"]}" alt="en bil"></figure><section><h3>${obj["title"]}</h3><p>${obj["beskrivelse"]}</p></section><h3>${obj["pris"]} kr.</h3></div>`
 			}
 		}
-
-		if (!searchOutputOneDOM.innerHTML.includes("<")) {
-			searchOutputOneDOM.innerHTML += "<p>Der kunne ikke findes nogle biludstur.</p>"
-		}
-
-		if (!searchOutputTwoDOM.innerHTML.includes("<")) {
-			searchOutputTwoDOM.innerHTML += "<p>Der kunne ikke findes nogle biler.</p>"
-		}
 	})
+
+	if (!searchOutputOneDOM.innerHTML.includes("<")) {
+		searchOutputOneDOM.innerHTML += "<p>Der kunne ikke findes nogle biludstur.</p>"
+	}
+
+	if (!searchOutputTwoDOM.innerHTML.includes("<")) {
+		searchOutputTwoDOM.innerHTML += "<p>Der kunne ikke findes nogle biler.</p>"
+	}
 }
 
 async function filterSearch() {
@@ -95,3 +101,17 @@ if (searchInput) {
 
 	filterSearch()
 }
+
+setTimeout(() => {
+	const searchTopMenuItem = document.querySelector("#search-form")
+	searchTopMenuItem.action = ""
+
+	searchTopMenuItem.addEventListener("submit", (event) => {
+		if (location.pathname === "/priser.html") {
+			event.preventDefault()
+
+			search(searchTopMenuItem.elements.search.value)
+			searchTopMenuItem.elements.search.value = ""
+		}
+	})
+}, 250)
